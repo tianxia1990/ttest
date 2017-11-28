@@ -35,3 +35,8 @@ def test_complex():
     obs = mean(num_list)
     exp = NotImplemented
     assert obs == exp
+
+def numpytest(nums):
+    import numpy as np
+    nums=np.random.uniform(0,1,10000)
+    assert np.mean(nums)==mean(nums)
