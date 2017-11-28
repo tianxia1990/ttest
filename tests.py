@@ -39,4 +39,4 @@ def test_complex():
 def numpytest():
     import numpy as np
     nums=np.random.uniform(0,1,10000)
-    assert np.mean(nums)==mean(nums)
+    np.testing.assert_allclose(np.mean(nums),mean(nums),atol=1e-07)
