@@ -36,7 +36,7 @@ def test_complex():
     exp = NotImplemented
     assert obs == exp
 
-def numpytest():
+def test_numpy():
     import numpy as np
     nums=np.random.uniform(0,1,10000)
     np.testing.assert_allclose(np.mean(nums),mean(nums),atol=1e-07)
